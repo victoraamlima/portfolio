@@ -4,7 +4,7 @@ const StyledSwitch = styled.div`
   width: 180px;
   height: 75px;
   border-radius: 65px;
-  background: var(--azul-6, #7ec9f7);
+  background: ${({ theme }) => theme.blue5};
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -15,8 +15,8 @@ const StyledSwitch = styled.div`
     width: 58px;
     height: 58px;
     border-radius: 50%;
-    background: var(--azul-1, #ffffff);
-    transition: all 0.3s ease;
+    background: ${({ theme }) => theme.white1};
+    // transition: all 0.3s ease;
   }
 
   svg {
@@ -27,7 +27,7 @@ const StyledSwitch = styled.div`
 `
 
 const Theme = styled.svg`
-//   padding: 0 0 0 10px;
+  //   padding: 0 0 0 10px;
 `
 
 export { StyledSwitch, Theme }
