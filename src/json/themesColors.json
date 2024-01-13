@@ -1,0 +1,17 @@
+{
+  "dark": {},
+  "light": {
+    "blue1": "#040F1A",
+    "blue2": "#0B2C4D",
+    "blue3": "#134980",
+    "blue4": "#1B67B3",
+    "blue5": "#7EC9F7",
+    "white1": "#FFFFFF",
+    "white2": "#EBEBEB",
+    "white3": "#FAFAFA",
+    "white4": "rgba(255, 255, 255, 0.50)",
+    "orange1": "#E2AC48",
+    "orange2": "#B96028",
+    "orange3": "#983C2D"
+  }
+}
