@@ -11,7 +11,7 @@ const StyledMenu = styled.ul`
   gap: 35px;
 
   a {
-    color: var(--azul-1, #040f1a);
+    color: ${({ theme }) => theme.blue1};
     text-align: center;
     font-family: Inter;
     font-size: 32px;
