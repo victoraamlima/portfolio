@@ -1,17 +1,19 @@
 {
-  "dark": {},
-  "light": {
-    "blue1": "#040F1A",
-    "blue2": "#0B2C4D",
-    "blue3": "#134980",
-    "blue4": "#1B67B3",
-    "blue5": "#7EC9F7",
-    "white1": "#FFFFFF",
-    "white2": "#EBEBEB",
-    "white3": "#FAFAFA",
-    "white4": "rgba(255, 255, 255, 0.50)",
-    "orange1": "#E2AC48",
-    "orange2": "#B96028",
-    "orange3": "#983C2D"
-  }
+  "blue1": "#040F1A",
+  "blue2": "#0B2C4D",
+  "blue3": "#134980",
+  "blue4": "#1B67B3",
+  "blue5": "#2284E6",
+  "blue6": "#7EC9F7",
+  "blue7": "#50A0D1",
+  "blue8": "rgba(80, 160, 209, 0.75)",
+  "white1": "#FFFFFF",
+  "white2": "#EBEBEB",
+  "white3": "#FAFAFA",
+  "white4": "#rgba(255, 255, 255, 0.10)",
+  "white5": "#rgba(255, 255, 255, 0.50)",
+  "white6": "#rgba(255, 255, 255, 0.75)",
+  "orange1": "#E2AC48",
+  "orange2": "#B96028",
+  "orange3": "#983C2D"
 }
