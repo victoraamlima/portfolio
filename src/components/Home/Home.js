@@ -1,14 +1,11 @@
 import { ContactBtn } from "../ContactBtn/ContactBtn"
 import perfioFoto from "../../images/profile.jpg"
 import { ProfileFoto, ProfileInfo, StyledHome } from "./styleHome"
-import { useSelector } from "react-redux"
 
 const Home = () => {
-  const theme = useSelector((state) => state.themeColors)
-
   return (
     <StyledHome>
-      <ProfileInfo theme={theme}>
+      <ProfileInfo>
         <div>
           <h4>Oi, eu sou</h4>
           <h2>Victor Meireles.</h2>
@@ -29,4 +26,4 @@ const Home = () => {
   )
 }
 
-export { Home }
+export default Home

@@ -11,7 +11,8 @@ const StyledMenu = styled.ul`
   gap: 35px;
 
   a {
-    color: ${({ theme }) => theme.blue1};
+    color: ${({ theme }) =>
+      theme.theme === "light" ? theme.colors.blue1 : theme.colors.white1};
     text-align: center;
     font-family: Inter;
     font-size: 32px;

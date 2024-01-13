@@ -6,7 +6,7 @@ const StyledHome = styled.section`
   padding: 0 100px;
   gap: 100px;
 `
-const ProfileInfo = styled.section`
+const ProfileInfo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +20,8 @@ const ProfileInfo = styled.section`
   }
 
   h2 {
-    color: ${({ theme }) => theme.blue3};
+    color: ${({ theme }) =>
+      theme.theme === "light" ? theme.colors.blue3 : theme.colors.white1};
     font-family: Inter;
     font-size: 80px;
     font-weight: 700;
@@ -28,7 +29,8 @@ const ProfileInfo = styled.section`
   }
 
   h3 {
-    color: ${({ theme }) => theme.blue3};
+    color: ${({ theme }) =>
+      theme.theme === "light" ? theme.colors.blue3 : theme.colors.white1};
     font-family: Inter;
     font-size: 40px;
     font-weight: 600;
@@ -36,7 +38,8 @@ const ProfileInfo = styled.section`
   }
 
   h4 {
-    color: ${({ theme }) => theme.blue3};
+    color: ${({ theme }) =>
+      theme.theme === "light" ? theme.colors.blue3 : theme.colors.white1};
     font-family: Inter;
     font-size: 48px;
     font-weight: 500;
@@ -44,7 +47,8 @@ const ProfileInfo = styled.section`
   }
 
   p {
-    color: ${({ theme }) => theme.blue1};
+    color: ${({ theme }) =>
+      theme.theme === "light" ? theme.colors.blue1 : theme.colors.white1};
     font-family: Inter;
     font-size: 32px;
     font-weight: 400;

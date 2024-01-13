@@ -1,11 +1,8 @@
-import { useSelector } from "react-redux"
 import { StyledMenu } from "./styleMenu"
 
 const Menu = () => {
-  const theme = useSelector((state) => state.themeColors)
-
   return (
-      <StyledMenu theme={theme}>
+      <StyledMenu>
         <li>
           <a href="#home">Home</a>
         </li>
