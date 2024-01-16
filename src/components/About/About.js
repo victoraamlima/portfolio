@@ -1,33 +1,12 @@
-import { AboutInfo, StyledAbout, Technologies, TechnologyInfo } from "./styleAbout"
-import ReduxSvg from "../../images/technologies/redux.svg"
-import CssSvg from "../../images/technologies/css.svg"
-import FigmaSvg from "../../images/technologies/figma.svg"
-import GitSvg from "../../images/technologies/git.svg"
-import HtmlSvg from "../../images/technologies/html.svg"
-import JsSvg from "../../images/technologies/js.svg"
-import JestSvg from "../../images/technologies/jest.svg"
-import JquerySvg from "../../images/technologies/jquery.svg"
-import NodejsSvg from "../../images/technologies/nodejs.svg"
-import NpmSvg from "../../images/technologies/npm.svg"
-import ReactSvg from "../../images/technologies/react.svg"
-import PhotoshopSvg from "../../images/technologies/photoshop.svg"
+import technologiesSvgs from "../../utils/projectsIcons/projectsIcons"
+import {
+  AboutInfo,
+  StyledAbout,
+  Technologies,
+  TechnologyInfo,
+} from "./styleAbout"
 
 const About = () => {
-  const technologiesSvgs = [
-    { name: "Redux", svg: ReduxSvg },
-    { name: "CSS", svg: CssSvg },
-    { name: "Figma", svg: FigmaSvg },
-    { name: "Git", svg: GitSvg },
-    { name: "HTML", svg: HtmlSvg },
-    { name: "JavaScript", svg: JsSvg },
-    { name: "Jest", svg: JestSvg },
-    { name: "jQuery", svg: JquerySvg },
-    { name: "Node.js", svg: NodejsSvg },
-    { name: "NPM", svg: NpmSvg },
-    { name: "React", svg: ReactSvg },
-    { name: "Photoshop", svg: PhotoshopSvg },
-  ]
-
   return (
     <StyledAbout>
       <h2>Sobre</h2>
