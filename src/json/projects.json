@@ -1,0 +1,44 @@
+{
+  "projectsInfo": [
+    {
+      "id": "pokedex",
+      "name": "pokedex",
+      "type": ["front-end"],
+      "description": "Pokédex responsiva em React utilizando a API pokeapi.co. Tendo uma página Home com a opção de adicionar mais Pokémons e uma página especifica para cada Pokémon.",
+      "image": "pokedex.png",
+      "techs": ["react", "js", "css", "jquery"],
+      "deploy": "https://victoraamlima.github.io/pokedex/",
+      "repository": "https://github.com/victoraamlima/pokedex"
+    },
+    {
+      "id": "github-profile",
+      "name": "perfil github",
+      "type": ["front-end"],
+      "description": "Projeto responsivo utilizando a API do GitHub para acessar as informações do perfil e seus repositórios, ele foi criado com HTML, CSS e Javascript.",
+      "image": "github-profile.png",
+      "techs": ["js", "css", "html"],
+      "deploy": "https://victoraamlima.github.io/perfil-gitHub/",
+      "repository": "https://github.com/victoraamlima/perfil-gitHub"
+    },
+    {
+      "id": "meu-time",
+      "name": "meu time",
+      "type": ["front-end"],
+      "description": "Eu fiz uma aplicação web em React que mostra informações sobre times de futebol. A aplicação usa uma API externa para obter os dados e tem um layout responsivo.",
+      "image": "meu-time.png",
+      "techs": ["react", "js", "css", "html"],
+      "deploy": "https://victoraamlima.github.io/meu-time/",
+      "repository": "https://github.com/victoraamlima/meu-time"
+    },
+    {
+      "id": "evaluation",
+      "name": "avaliação",
+      "type": ["front-end"],
+      "description": "Projeto feito com HTML, CSS, Javascript, simulando um questionário de avaliação de um site.",
+      "image": "evaluation.png",
+      "techs": ["js", "css", "html"],
+      "deploy": "https://victoraamlima.github.io/avaliacao/",
+      "repository": "https://github.com/victoraamlima/avaliacao"
+    }
+  ]
+}
