@@ -4,6 +4,7 @@ import Home from "../Home/Home"
 import { StyledMain } from "./styleMain"
 import { ThemeProvider } from "styled-components"
 import About from "../About/About"
+import Projects from "../Projects/Projects"
 
 const Main = () => {
   const themeInfo = useSelector((state) => state.themeColors)
@@ -14,6 +15,7 @@ const Main = () => {
         <Header />
         <Home />
         <About />
+        <Projects />
       </StyledMain>
     </ThemeProvider>
   )
