@@ -1,15 +1,15 @@
 import Menu from "../Menu/Menu"
 import Switch from "../Switch/Switch"
-import { StyledHeader } from "./styleHeader"
-import { ReactComponent as Logo } from "../../images/logo.svg"
+import { StyledHeader, StyledLogo } from "./styleHeader"
+import logo  from "../../images/logo.svg"
 
 const Header = () => {
   return (
-      <StyledHeader >
-        <Logo />
-        <Menu />
-        <Switch />
-      </StyledHeader>
+    <StyledHeader>
+      <StyledLogo src={logo} alt="Logo" />
+      <Menu />
+      <Switch />
+    </StyledHeader>
   )
 }
 
