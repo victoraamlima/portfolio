@@ -11,8 +11,6 @@ import {
   ProjectsCardsInfo,
 } from "./styleProjectsCards"
 
-import a from "../../images/projects/pokedex.png"
-
 const ProjectsCards = () => {
   const projectsInfo = projectsInfoJson.projectsInfo
 
@@ -49,7 +47,7 @@ const ProjectsCards = () => {
                 <StyledButton
                   $width="184px"
                   $fontesize="20px"
-                  $height="48px" 
+                  $height="48px"
                   href={project.deploy}
                 >
                   deploy
@@ -57,7 +55,7 @@ const ProjectsCards = () => {
                 <StyledButton
                   $width="184px"
                   $fontesize="20px"
-                  $height="48px" 
+                  $height="48px"
                   href={project.repository}
                 >
                   repositório
