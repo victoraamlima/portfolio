@@ -94,6 +94,7 @@ const ButtonMoreInformations = styled.button`
   font-weight: 500;
   line-height: normal;
   text-decoration-line: underline;
+  cursor: pointer;
 `
 
 export {

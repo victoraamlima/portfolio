@@ -18,6 +18,7 @@ const StyledButton = styled.span`
   font-weight: 500;
   text-decoration-line: underline;
   text-transform: uppercase;
+  cursor: pointer;
 `
 
 export { StyledButton }
