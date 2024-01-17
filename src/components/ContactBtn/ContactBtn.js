@@ -3,11 +3,11 @@ import LinkedinLogo from "../../images/linkedin-logo.svg"
 import WhatsappLogo from "../../images/whatsapp-logo.svg"
 import { ContactIcon, StyledContactBtn } from "./styleContactBtn"
 
-const ContactBtn = () => {
+const ContactBtn = ({ footer }) => {
   const contactIcons = [GithubLogo, LinkedinLogo, WhatsappLogo]
 
   return (
-    <StyledContactBtn>
+    <StyledContactBtn $footer={footer}>
       {contactIcons.map((icon, index) => {
         return (
           <li key={index}>
