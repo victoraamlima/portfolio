@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const StyledButton = styled.div`
+const StyledButton = styled.span`
   display: flex;
   width: ${({ $width }) => $width};
   height: ${({ $height }) => $height};
