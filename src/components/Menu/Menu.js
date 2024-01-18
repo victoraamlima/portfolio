@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { LabelMenuHamburger, StyledMenu } from "./styleMenu"
 
 const Menu = () => {

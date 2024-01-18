@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import breakpoints from "../../style/responsive"
 
 const StyledMain = styled.main`
   display: flex;
