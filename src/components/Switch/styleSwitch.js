@@ -19,7 +19,7 @@ const StyledSwitch = styled.button`
 
   span {
     position: absolute;
-    right: ${({ theme }) => (theme.theme === "light" ? "10px" : "80px")};
+    right: ${({ theme }) => (theme.theme === "light" ? "1rem" : "8rem")};
     width: 4.5rem;
     height: 4.5rem;
     border-radius: 50%;
