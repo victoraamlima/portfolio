@@ -36,22 +36,20 @@ const StyledAbout = styled.section`
 `
 const AboutInfo = styled.div`
   display: flex;
+  gap: 100px;
   width: 100%;
   justify-content: space-between;
 
-  & > div:first-child {
-    max-width: 800px;
+  & > div {
+    max-width: 50%;
+    min-width: 40%;
   }
 `
 const Technologies = styled.div`
-//   width: 592px;
-//   height: 600px;
-  justify-items: start;
-
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 75px; 
+  justify-items: start;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 75px;
 `
 const TechnologyInfo = styled.div`
   display: flex;
@@ -62,7 +60,7 @@ const TechnologyInfo = styled.div`
 
   span {
     color: ${({ theme }) =>
-    theme.theme === "light" ? theme.colors.black1 : theme.colors.white1};
+      theme.theme === "light" ? theme.colors.black1 : theme.colors.white1};
     text-align: center;
     font-family: Inter;
     font-size: 20px;

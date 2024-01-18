@@ -2,8 +2,9 @@ import styled from "styled-components"
 
 const ProjectsCardsContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(515px, 1fr));
   gap: 60px;
+  width: 100%;
 `
 
 const ProjectCard = styled.div`
