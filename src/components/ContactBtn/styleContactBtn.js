@@ -14,6 +14,10 @@ const StyledContactBtn = styled.ul`
 const ContactIcon = styled.img`
   width: 7rem;
   height: 7rem;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `
 
 export { StyledContactBtn, ContactIcon }

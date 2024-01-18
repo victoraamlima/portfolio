@@ -23,6 +23,11 @@ const ProjectCard = styled.div`
   background-color: ${({ theme }) =>
     theme.theme === "light" ? theme.colors.blue6 : theme.colors.blue2};
 
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px 0px ${({ theme }) => theme.colors.black2};
+  }
+
   @media (max-width: ${breakpoints.small1}px) {
     width: 275px;
   }
@@ -111,6 +116,10 @@ const ButtonMoreInformations = styled.button`
   line-height: normal;
   text-decoration-line: underline;
   cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `
 
 export {

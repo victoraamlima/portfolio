@@ -17,6 +17,13 @@ const StyledMenu = styled.ul`
     font-family: Inter;
     font-size: 3.2rem;
     font-weight: 500;
+    transition: 0.3s;
+
+    &:hover {
+      color: ${({ theme }) =>
+        theme.theme === "light" ? theme.colors.white2 : theme.colors.blue6};
+      text-decoration: underline;
+    }
   }
 `
 
