@@ -48,6 +48,7 @@ const ProjectsCards = () => {
                   $width="18.4rem"
                   $fontesize="2rem"
                   $height="4.8rem"
+                  $local={"card"}
                   href={project.deploy}
                 >
                   deploy
@@ -56,6 +57,7 @@ const ProjectsCards = () => {
                   $width="18.4rem"
                   $fontesize="2rem"
                   $height="4.8rem"
+                  $local={"card"}
                   href={project.repository}
                 >
                   repositório

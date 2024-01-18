@@ -8,8 +8,15 @@ const StyledButton = styled.span`
   justify-content: center;
   align-items: center;
   border-radius: 7px;
-  background-color: ${({ theme }) =>
-    theme.theme === "light" ? theme.colors.blue2 : theme.colors.blue4};
+  background-color: ${({ theme, $local }) => {
+    if ($local === "card") {
+      return theme.theme === "light" ? theme.colors.blue2 : theme.colors.blue4
+    } else if ($local === "project") {
+      return theme.theme === "light" ? theme.colors.blue2 : theme.colors.blue5
+    } else if ($local === "email") {
+      return theme.theme === "light" ? theme.colors.blue2 : theme.colors.blue1
+    }
+  }};
   color: ${({ theme }) => theme.colors.white1};
   text-align: center;
   font-family: Inter;

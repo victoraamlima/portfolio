@@ -23,7 +23,12 @@ const Email = () => {
         ></textarea>
       </div>
 
-      <StyledButton $width="30rem" $height="7.8rem" $fontesize="3rem">
+      <StyledButton
+        $width="30rem"
+        $height="7.8rem"
+        $fontesize="3rem"
+        $local={"email"}
+      >
         Enviar
       </StyledButton>
     </StyledEmail>
