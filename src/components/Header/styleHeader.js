@@ -6,13 +6,13 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   background-color: ${({ theme }) =>
     theme.theme === "light" ? theme.colors.blue4 : theme.colors.blue2};
-  height: 100px;
-  padding: 0px 100px;
+  height: 11rem;
+  padding: 0 10rem;
   align-items: center;
 `
 
 const StyledLogo = styled.img`
-  height: 70px;
+  height: 7rem;
 `
 
 export { StyledHeader, StyledLogo }

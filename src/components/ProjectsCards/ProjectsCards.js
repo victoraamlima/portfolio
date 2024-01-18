@@ -45,17 +45,17 @@ const ProjectsCards = () => {
 
               <ProjectLinks>
                 <StyledButton
-                  $width="184px"
-                  $fontesize="20px"
-                  $height="48px"
+                  $width="18.4rem"
+                  $fontesize="2rem"
+                  $height="4.8rem"
                   href={project.deploy}
                 >
                   deploy
                 </StyledButton>
                 <StyledButton
-                  $width="184px"
-                  $fontesize="20px"
-                  $height="48px"
+                  $width="18.4rem"
+                  $fontesize="2rem"
+                  $height="4.8rem"
                   href={project.repository}
                 >
                   repositório

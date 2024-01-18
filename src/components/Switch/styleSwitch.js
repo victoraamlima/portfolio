@@ -3,9 +3,9 @@ import styled from "styled-components"
 const StyledSwitch = styled.button`
   position: relative;
   border: none;
-  width: 138px;
-  height: 60px;
-  border-radius: 65px;
+  width: 13.8rem;
+  height: 6rem;
+  border-radius: 6.5rem;
   background: ${({ theme }) =>
     theme.theme === "light" ? theme.colors.blue6 : theme.colors.blue1};
   display: flex;
@@ -13,15 +13,15 @@ const StyledSwitch = styled.button`
     theme.theme === "light" ? "row" : "row-reverse"};
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 1rem;
   transition: all 0.3s ease;
   cursor: pointer;
 
   span {
     position: absolute;
     right: ${({ theme }) => (theme.theme === "light" ? "10px" : "80px")};
-    width: 45px;
-    height: 45px;
+    width: 4.5rem;
+    height: 4.5rem;
     border-radius: 50%;
     background: ${({ theme }) => theme.colors.white1};
     transition: all 0.5s ease-in-out;
@@ -34,8 +34,8 @@ const ThemeIcon = styled.div`
 
   svg {
     padding: 0 0 0 10px;
-    width: 45px;
-    height: 45px;
+    width: 4.5rem;
+    height: 4.5rem;
     transition: all 0.5s ease-in-out;
 
     &.active {

@@ -1,14 +1,19 @@
 import styled from "styled-components"
+import breakpoints from "../../style/responsive"
 
 const StyledContactBtn = styled.ul`
   display: flex;
   flex-direction: ${({ $footer }) => ($footer ? " column " : "row")};
   gap: 40px;
+
+  @media (max-width: ${breakpoints.large2}px) {
+    flex-direction: row;
+  }
 `
 
 const ContactIcon = styled.img`
-  width: 70px;
-  height: 70px;
+  width: 7rem;
+  height: 7rem;
 `
 
 export { StyledContactBtn, ContactIcon }

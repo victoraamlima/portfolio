@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
 const StyledMenu = styled.ul`
-  position: absolute;
+  // position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@ const StyledMenu = styled.ul`
       theme.theme === "light" ? theme.colors.blue1 : theme.colors.white1};
     text-align: center;
     font-family: Inter;
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 500;
   }
 `
