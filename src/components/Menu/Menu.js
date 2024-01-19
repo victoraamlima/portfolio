@@ -29,13 +29,13 @@ const Menu = () => {
             <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#sobre">Sobre</a>
+            <a href="#about">Sobre</a>
           </li>
           <li>
-            <a href="#projetos">Projetos</a>
+            <a href="#projects">Projetos</a>
           </li>
           <li>
-            <a href="#contatos">Contatos</a>
+            <a href="#footer">Contatos</a>
           </li>
         </StyledMenu>
 

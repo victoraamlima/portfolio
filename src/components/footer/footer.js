@@ -4,7 +4,7 @@ import { StyledFooter } from "./styleFooter"
 
 const Footer = () => {
   return (
-    <StyledFooter>
+    <StyledFooter id="footer">
       <ProfileInfo footer={true} />
       <Email />
     </StyledFooter>

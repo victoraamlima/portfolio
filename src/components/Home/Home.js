@@ -4,7 +4,7 @@ import ProfileInfo from "../ProfileInfo/ProfileInfo"
 
 const Home = () => {
   return (
-    <StyledHome>
+    <StyledHome id="home"> 
       <ProfileInfo footer={false} />
 
       <ProfileFoto src={perfioFoto} alt="Foto do perfio do Victor Meireles" />

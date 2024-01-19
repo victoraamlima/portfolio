@@ -8,7 +8,7 @@ import {
 
 const About = () => {
   return (
-    <StyledAbout>
+    <StyledAbout id="about">
       <h2>Sobre</h2>
 
       <AboutInfo>
