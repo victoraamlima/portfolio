@@ -1,5 +1,6 @@
 import projectsInfoJson from "../../json/projects.json"
 import technologiesSvgs from "../../utils/projectsIcons/projectsIcons"
+import ComingSoon from "./ComingSoon/ComingSoon"
 import {
   ButtonMoreInformations,
   ProjectCard,
@@ -72,6 +73,8 @@ const ProjectsCards = () => {
           </ProjectCard>
         )
       })}
+
+      <ComingSoon />
     </ProjectsCardsContainer>
   )
 }

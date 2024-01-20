@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import breakpoints from "../../style/responsive"
 import { StyledButtonCss } from "../Button/styleButton"
 
@@ -14,7 +14,7 @@ const ProjectsCardsContainer = styled.div`
   }
 `
 
-const ProjectCard = styled.div`
+const ProjectCardCss = css`
   display: flex;
   flex-direction: column;
   width: 51.5rem;
@@ -32,6 +32,10 @@ const ProjectCard = styled.div`
   @media (max-width: ${breakpoints.small1}px) {
     width: 275px;
   }
+`
+
+const ProjectCard = styled.div`
+  ${ProjectCardCss}
 `
 const ProjectsCardsInfo = styled.div`
   display: flex;
@@ -60,7 +64,8 @@ const ProjectsCardsInfo = styled.div`
     width: 185px;
     padding: 0.7rem 0;
     text-transform: capitalize;
-    background: ${({ theme }) => theme.colors.orange1};
+    background: ${({ theme, key }) =>
+      key === "front-end" && theme.colors.orange1};
   }
 
   p {
@@ -127,6 +132,33 @@ const ButtonMoreInformations = styled.button`
   }
 `
 
+const ComingSoonContainer = styled.div`
+  position: relative;
+
+  span {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 5rem;
+    z-index: 10;
+  }
+`
+const ComingSoonCard = styled.div`
+  ${ProjectCardCss}
+  position: relative;
+  filter: grayscale(100%) blur(4px);
+`
+const ComingSoonStrip = styled.img`
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+  top: 30%;
+`
+
 export {
   ProjectsCardsContainer,
   ProjectCard,
@@ -136,4 +168,7 @@ export {
   ProjectLinks,
   StyledLink,
   ButtonMoreInformations,
+  ComingSoonContainer,
+  ComingSoonCard,
+  ComingSoonStrip,
 }
