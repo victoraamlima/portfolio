@@ -1,6 +1,5 @@
 import projectsInfoJson from "../../json/projects.json"
 import technologiesSvgs from "../../utils/projectsIcons/projectsIcons"
-import { StyledButton } from "../Button/styleButton"
 import {
   ButtonMoreInformations,
   ProjectCard,
@@ -47,6 +46,7 @@ const ProjectsCards = () => {
               <ProjectLinks>
                 <StyledLink
                   target="_blank"
+                  rel="noreferrer"
                   $width="18.4rem"
                   $fontesize="2rem"
                   $height="4.8rem"
@@ -57,6 +57,7 @@ const ProjectsCards = () => {
                 </StyledLink>
                 <StyledLink
                   target="_blank"
+                  rel="noreferrer"
                   $width="18.4rem"
                   $fontesize="2rem"
                   $height="4.8rem"
