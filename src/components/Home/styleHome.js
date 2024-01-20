@@ -4,7 +4,7 @@ import breakpoints from "../../style/responsive"
 const StyledHome = styled.section`
   display: flex;
   justify-content: center;
-  padding: 0 10rem;
+  padding: 0 10rem 7rem;
   gap: 10rem;
 
   @media (max-width: ${breakpoints.medium1}px) {
