@@ -2,7 +2,10 @@ import styled from "styled-components"
 import breakpoints from "../../style/responsive"
 
 const StyledHeader = styled.header`
-  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   background-color: ${({ theme }) =>
@@ -14,7 +17,25 @@ const StyledHeader = styled.header`
 
   @media (max-width: ${breakpoints.medium1}px) {
     padding: 0 30px;
-    background-color: transparent;
+    background-color: ${({ theme }) =>
+      theme.theme === "light" ? theme.colors.white3 : theme.colors.blue3};
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -5rem;
+      left: 0;
+      width: 100%;
+      height: 5rem;
+      background: transparent;
+      background: linear-gradient(
+        180deg,
+        ${({ theme }) =>
+            theme.theme === "light" ? theme.colors.white3 : theme.colors.blue3}
+          0%,
+        transparent 100%
+      );
+    }
   }
 
   @media (max-width: ${breakpoints.small1}px) {

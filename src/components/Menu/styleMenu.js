@@ -3,9 +3,9 @@ import breakpoints from "../../style/responsive"
 
 const StyledMenu = styled.ul`
   // position: absolute;
+  // transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  // transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,8 +13,7 @@ const StyledMenu = styled.ul`
   transition: 0.3s;
 
   a {
-    color: ${({ theme }) =>
-      theme.theme === "light" ? theme.colors.blue1 : theme.colors.white1};
+    color: ${({ theme }) => theme.colors.white1};
     text-align: center;
     font-family: Inter;
     font-size: 3.2rem;
@@ -25,7 +24,12 @@ const StyledMenu = styled.ul`
       color: ${({ theme }) =>
         theme.theme === "light" ? theme.colors.white2 : theme.colors.blue6};
       text-decoration: underline;
+      transform: scale(1.1);
     }
+  }
+
+  li:hover {
+    transform: scale(1.1);
   }
 
   @media (max-width: ${breakpoints.medium1}px) {
@@ -105,7 +109,6 @@ const LabelMenuHamburger = styled.label`
         padding: 0 100px;
         height: 250px;
         width: 284px;
-        border: 1px solid ${({ theme }) => theme.colors.blue3};
         opacity: 1;
 
         li:last-child a::after {
@@ -125,11 +128,8 @@ const LabelMenuHamburger = styled.label`
           left: -64px;
           width: 220px;
           height: 2px;
-          background-color: ${({ theme }) =>
-            theme.theme === "light" ? theme.colors.blue1 : theme.colors.white1};
+          background-color: ${({ theme }) => theme.colors.white1};
         }
-
-      
       }
     }
   }
