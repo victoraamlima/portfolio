@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import breakpoints from "../../style/responsive"
+import { StyledButtonCss } from "../Button/styleButton"
 
 const ProjectsCardsContainer = styled.div`
   display: grid;
@@ -105,6 +106,10 @@ const ProjectLinks = styled.div`
   align-items: flex-start;
   gap: 1.5rem;
 `
+const StyledLink = styled.a`
+  ${StyledButtonCss}
+`
+
 const ButtonMoreInformations = styled.button`
   all: unset;
   color: ${({ theme }) =>
@@ -129,5 +134,6 @@ export {
   ProjectImage,
   ProjectTechnologies,
   ProjectLinks,
+  StyledLink,
   ButtonMoreInformations,
 }

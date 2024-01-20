@@ -9,6 +9,7 @@ import {
   ProjectTechnologies,
   ProjectsCardsContainer,
   ProjectsCardsInfo,
+  StyledLink,
 } from "./styleProjectsCards"
 
 const ProjectsCards = () => {
@@ -44,7 +45,8 @@ const ProjectsCards = () => {
               </ProjectTechnologies>
 
               <ProjectLinks>
-                <StyledButton
+                <StyledLink
+                  target="_blank"
                   $width="18.4rem"
                   $fontesize="2rem"
                   $height="4.8rem"
@@ -52,8 +54,9 @@ const ProjectsCards = () => {
                   href={project.deploy}
                 >
                   deploy
-                </StyledButton>
-                <StyledButton
+                </StyledLink>
+                <StyledLink
+                  target="_blank"
                   $width="18.4rem"
                   $fontesize="2rem"
                   $height="4.8rem"
@@ -61,7 +64,7 @@ const ProjectsCards = () => {
                   href={project.repository}
                 >
                   repositório
-                </StyledButton>
+                </StyledLink>
               </ProjectLinks>
               <ButtonMoreInformations>SAIBA MAIS</ButtonMoreInformations>
             </ProjectsCardsInfo>

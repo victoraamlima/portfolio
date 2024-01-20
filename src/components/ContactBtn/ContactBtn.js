@@ -27,7 +27,7 @@ const ContactBtn = ({ footer }) => {
       {contactsInfo.map((contactInfo, index) => {
         return (
           <li key={index}>
-            <a href={contactInfo.link} target="blank">
+            <a href={contactInfo.link} target="_blank">
               <ContactIcon src={contactInfo.icon} alt={contactInfo.alt} />
             </a>
           </li>

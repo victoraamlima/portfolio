@@ -1,6 +1,6 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
-const StyledButton = styled.span`
+const StyledButtonCss = css`
   display: flex;
   width: ${({ $width }) => $width};
   height: ${({ $height }) => $height};
@@ -31,4 +31,8 @@ const StyledButton = styled.span`
   }
 `
 
-export { StyledButton }
+const StyledButton = styled.button`
+  ${StyledButtonCss}
+`
+
+export { StyledButtonCss, StyledButton }
