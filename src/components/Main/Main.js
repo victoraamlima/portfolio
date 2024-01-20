@@ -6,9 +6,14 @@ import Home from "../Home/Home"
 import About from "../About/About"
 import Projects from "../Projects/Projects"
 import Footer from "../Footer/Footer"
+import { useEffect } from "react"
 
 const Main = () => {
   const themeInfo = useSelector((state) => state.themeColors)
+
+  useEffect(() => {
+    localStorage.setItem("theme", JSON.stringify(themeInfo))
+  }, [themeInfo])
 
   return (
     <ThemeProvider theme={themeInfo}>
