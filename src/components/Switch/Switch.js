@@ -3,11 +3,13 @@ import { ReactComponent as ThemeLight } from "../../images/theme-light.svg"
 import { ReactComponent as ThemeDark } from "../../images/theme-dark.svg"
 import switchTheme from "../store/actions/themesColors"
 import { StyledSwitch, ThemeIcon } from "./styleSwitch"
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 
 const Switch = () => {
+  const themeInfo = useSelector((state) => state.themeColors)
+
   const dispatch = useDispatch()
-  const [themeType, setThemeType] = useState("light")
+  const [themeType, setThemeType] = useState(themeInfo.theme)
 
   return (
     <StyledSwitch
