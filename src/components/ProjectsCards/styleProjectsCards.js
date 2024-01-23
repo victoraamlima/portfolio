@@ -37,7 +37,7 @@ const ProjectCardCss = css`
 const ProjectCard = styled.div`
   ${ProjectCardCss}
 `
-const ProjectsCardsInfo = styled.div`
+const ProjectCardInfo = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1.5rem 3rem 2rem;
@@ -169,7 +169,7 @@ const ComingSoonStrip = styled.img`
 export {
   ProjectsCardsContainer,
   ProjectCard,
-  ProjectsCardsInfo,
+  ProjectCardInfo,
   ProjectType,
   ProjectImage,
   ProjectTechnologies,

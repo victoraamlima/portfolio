@@ -1,7 +1,7 @@
 import technologiesSvgs from "../../../utils/projectsIcons/projectsIcons"
 import ComingSoonSvg from "../../../images/coming-soon/coming-soon.svg"
 import {
-  ProjectsCardsInfo,
+  ProjectCardInfo,
   ProjectImage,
   ProjectTechnologies,
   ProjectLinks,
@@ -37,7 +37,7 @@ const ComingSoon = () => {
             src={require(`../../../images/coming-soon/image-coming-soon.png`)}
             alt="Coming Soon card"
           />
-          <ProjectsCardsInfo>
+          <ProjectCardInfo>
             <h4>{comingSoonCardInfo.name}</h4>
 
             {comingSoonCardInfo.type.map((type) => {
@@ -81,7 +81,7 @@ const ComingSoon = () => {
               </StyledLink>
             </ProjectLinks>
             <ButtonMoreInformations>SAIBA MAIS</ButtonMoreInformations>
-          </ProjectsCardsInfo>
+          </ProjectCardInfo>
         </ComingSoonCard>
       </ComingSoonContainer>
     </>

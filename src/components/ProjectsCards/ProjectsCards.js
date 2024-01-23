@@ -1,3 +1,4 @@
+import { useState } from "react"
 import projectsInfoJson from "../../json/projects.json"
 import technologiesSvgs from "../../utils/projectsIcons/projectsIcons"
 import ComingSoon from "./ComingSoon/ComingSoon"
@@ -9,7 +10,7 @@ import {
   ProjectTechnologies,
   ProjectType,
   ProjectsCardsContainer,
-  ProjectsCardsInfo,
+  ProjectCardInfo,
   StyledLink,
 } from "./styleProjectsCards"
 
@@ -26,11 +27,15 @@ const ProjectsCards = () => {
               alt={project.name}
             />
 
-            <ProjectsCardsInfo>
+            <ProjectCardInfo>
               <h4>{project.name}</h4>
 
               {project.type.map((type) => {
-                return <ProjectType $type={type} key={type}>{type}</ProjectType>
+                return (
+                  <ProjectType $type={type} key={type}>
+                    {type}
+                  </ProjectType>
+                )
               })}
 
               <p>{project.description}</p>
@@ -70,7 +75,7 @@ const ProjectsCards = () => {
                 </StyledLink>
               </ProjectLinks>
               <ButtonMoreInformations>SAIBA MAIS</ButtonMoreInformations>
-            </ProjectsCardsInfo>
+            </ProjectCardInfo>
           </ProjectCard>
         )
       })}
