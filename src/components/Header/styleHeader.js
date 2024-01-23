@@ -45,12 +45,12 @@ const StyledHeader = styled.header`
 
 const StyledLogo = styled.img`
   height: 7rem;
-  filter: ${({ theme }) =>
-    theme.theme === "light"
-      ? "invert(31%) sepia(89%) saturate(1029%) hue-rotate(184deg) brightness(89%) contrast(90%)"
-      : "none"};
 
   @media (max-width: ${breakpoints.medium1}px) {
+    filter: ${({ theme }) =>
+      theme.theme === "light"
+        ? "invert(31%) sepia(89%) saturate(1029%) hue-rotate(184deg) brightness(65%) contrast(200%)"
+        : "none"};
     position: absolute;
     top: 50%;
     left: 50%;
