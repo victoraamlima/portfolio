@@ -54,20 +54,6 @@ const ProjectsCardsInfo = styled.div`
     text-transform: capitalize;
   }
 
-  h5 {
-    color: ${({ theme }) => theme.colors.white1};
-    text-align: center;
-    font-family: Inter;
-    font-size: 3rem;
-    font-weight: 500;
-    border-radius: 0.7rem;
-    width: 185px;
-    padding: 0.7rem 0;
-    text-transform: capitalize;
-    background: ${({ theme, key }) =>
-      key === "front-end" && theme.colors.orange1};
-  }
-
   p {
     color: ${({ theme }) =>
       theme.theme === "light" ? theme.colors.blue1 : theme.colors.white1};
@@ -77,6 +63,27 @@ const ProjectsCardsInfo = styled.div`
     font-weight: 400;
     padding: 0.5rem 0;
   }
+`
+
+const ProjectType = styled.h5`
+  color: ${({ theme }) => theme.colors.white1};
+  text-align: center;
+  font-family: Inter;
+  font-size: 3rem;
+  font-weight: 500;
+  border-radius: 0.7rem;
+  width: 18.5rem;
+  padding: 0.7rem 0;
+  text-transform: capitalize;
+  background: ${({ theme, $type }) => {
+    if ($type === "front-end") {
+      return theme.colors.orange1
+    } else if ($type === "back-end") {
+      return theme.colors.orange2
+    } else if ($type === "full-stack") {
+      return theme.colors.orange3
+    }
+  }};
 `
 
 const ProjectImage = styled.img`
@@ -163,6 +170,7 @@ export {
   ProjectsCardsContainer,
   ProjectCard,
   ProjectsCardsInfo,
+  ProjectType,
   ProjectImage,
   ProjectTechnologies,
   ProjectLinks,

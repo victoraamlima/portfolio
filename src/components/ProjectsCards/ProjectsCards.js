@@ -7,6 +7,7 @@ import {
   ProjectImage,
   ProjectLinks,
   ProjectTechnologies,
+  ProjectType,
   ProjectsCardsContainer,
   ProjectsCardsInfo,
   StyledLink,
@@ -29,7 +30,7 @@ const ProjectsCards = () => {
               <h4>{project.name}</h4>
 
               {project.type.map((type) => {
-                return <h5 key={type}>{type}</h5>
+                return <ProjectType $type={type} key={type}>{type}</ProjectType>
               })}
 
               <p>{project.description}</p>
