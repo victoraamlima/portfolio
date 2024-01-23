@@ -12,7 +12,10 @@ const Main = () => {
   const themeInfo = useSelector((state) => state.themeColors)
 
   useEffect(() => {
-    localStorage.setItem("theme", JSON.stringify(themeInfo))
+    localStorage.setItem(
+      "themePortfolioVictorMeireles",
+      JSON.stringify(themeInfo)
+    )
   }, [themeInfo])
 
   return (
