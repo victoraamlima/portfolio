@@ -1,17 +1,28 @@
 import colors from "../../../json/themesColors.json"
 
 export default function reducer(state, action) {
-  const theme = JSON.parse(localStorage.getItem("theme")) || {
+  const defaultTheme = {
     theme: "light",
     colors: colors,
   }
 
+  const themeLocalStorage = JSON.parse(
+    localStorage.getItem("themePortfolioVictorMeireles")
+  )
+
+  let theme = defaultTheme
+
+  if (
+    typeof themeLocalStorage === "object" &&
+    themeLocalStorage !== null &&
+    "theme" in themeLocalStorage &&
+    "colors" in themeLocalStorage
+  ) {
+    theme = themeLocalStorage
+  }
+
   if (action.type === "SWITCH_THEME") {
-    if (action.payload === "light") {
-      return { theme: "dark", colors }
-    } else if (action.payload === "dark") {
-      return { theme: "light", colors }
-    }
+    theme.theme = action.payload === "light" ? "dark" : "light"
   }
 
   return theme
