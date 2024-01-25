@@ -6,10 +6,12 @@ import Home from "../Home/Home"
 import About from "../About/About"
 import Projects from "../Projects/Projects"
 import Footer from "../Footer/Footer"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
+import DetailedProjectCardInfo from "../DetailedProjectCardInfo/DetailedProjectCardInfo"
 
 const Main = () => {
   const themeInfo = useSelector((state) => state.themeColors)
+  const selectedProject = useSelector((state) => state.selectedProject)
 
   useEffect(() => {
     localStorage.setItem(
@@ -18,14 +20,27 @@ const Main = () => {
     )
   }, [themeInfo])
 
+  const [isSelectedDetailedProject, setIsSelectedDetailedProject] =
+    useState(false)
+
+  useEffect(() => {
+    if (Object.keys(selectedProject).length !== 0) {
+      setIsSelectedDetailedProject(true)
+    } else {
+      setIsSelectedDetailedProject(false)
+    }
+  }, [selectedProject])
+
   return (
     <ThemeProvider theme={themeInfo}>
-      <StyledMain>
+      <StyledMain $isSelectedDetailedProject={isSelectedDetailedProject} >
         <Header />
         <Home />
         <About />
         <Projects />
         <Footer />
+        {isSelectedDetailedProject && <DetailedProjectCardInfo />}
+        {/* <DetailedProjectCardInfo /> */}
       </StyledMain>
     </ThemeProvider>
   )
