@@ -1,12 +1,7 @@
 import { useDispatch, useSelector } from "react-redux"
 import technologiesSvgs from "../../utils/projectsIcons/projectsIcons"
 import { closeSelectProject } from "../store/actions/DetailedProjectCardInfo"
-import {
-  ProjectLinks,
-  ProjectTechnologies,
-  ProjectType,
-  StyledLink,
-} from "../ProjectsCards/styleProjectsCards"
+import { ProjectType, StyledLink } from "../ProjectsCards/styleProjectsCards"
 import {
   DetailedProjectCardInfoContainer,
   DetailedProjectLinks,
@@ -71,12 +66,12 @@ const DetailedProjectCardInfo = () => {
         </StyledDetailedProjectCardInfo>
 
         <ProjectImgs>
-          <img src={require("../../images/Frame 118.png")} />
+          <img src={require("../../images/Frame 118.png")} alt="test" />
 
           <div>
-            <img src={require("../../images/Captura.png")} />
-            <img src={require("../../images/Captura.png")} />
-            <img src={require("../../images/Captura.png")} />
+            <img src={require("../../images/Captura.png")} alt="test"  />
+            <img src={require("../../images/Captura.png")} alt="test"  />
+            <img src={require("../../images/Captura.png")} alt="test"  />
           </div>
         </ProjectImgs>
 
