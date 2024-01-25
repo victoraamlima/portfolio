@@ -18,7 +18,7 @@ const DetailedProjectCardInfoContainer = styled.div`
   gap: 3rem;
   width: unset;
   height: unset;
-  max-height: 95vh;
+  max-height: 90vh;
   background-color: ${({ theme }) =>
     theme.theme === "light" ? theme.colors.blue4 : theme.colors.blue2};
   z-index: 10;
