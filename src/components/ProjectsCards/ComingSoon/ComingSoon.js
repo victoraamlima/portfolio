@@ -64,7 +64,6 @@ const ComingSoon = () => {
                 $fontesize="2rem"
                 $height="4.8rem"
                 $local={"card"}
-                href={comingSoonCardInfo.deploy}
               >
                 deploy
               </StyledLink>
@@ -75,7 +74,6 @@ const ComingSoon = () => {
                 $fontesize="2rem"
                 $height="4.8rem"
                 $local={"card"}
-                href={comingSoonCardInfo.repository}
               >
                 repositório
               </StyledLink>
