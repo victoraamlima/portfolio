@@ -1,8 +1,12 @@
 import { useState } from "react"
-import { LabelMenuHamburger, StyledMenu } from "./styleMenu"
+import { LabelMenuHamburger, StyledMenu, StyledMenuList } from "./styleMenu"
+import { Link } from "react-scroll"
 
 const Menu = () => {
   const [checked, setChecked] = useState(false)
+  const [layoutMobile, setLayoutMobile] = useState(
+    window.innerWidth > 900 ? false : true
+  )
 
   const handleHamburgerFilter = (event) => {
     setChecked(event.target.checked)
@@ -11,11 +15,14 @@ const Menu = () => {
   window.addEventListener("resize", () => {
     if (window.innerWidth > 900) {
       setChecked(false)
+      setLayoutMobile(false)
+    } else {
+      setLayoutMobile(true)
     }
   })
 
   return (
-    <>
+    <StyledMenu>
       <LabelMenuHamburger htmlFor="menu-hamburger">
         <input
           checked={checked}
@@ -24,24 +31,42 @@ const Menu = () => {
           onChange={handleHamburgerFilter}
         />
 
-        <StyledMenu>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">Sobre</a>
-          </li>
-          <li>
-            <a href="#projects">Projetos</a>
-          </li>
-          <li>
-            <a href="#footer">Contatos</a>
-          </li>
-        </StyledMenu>
-
         <span></span>
       </LabelMenuHamburger>
-    </>
+
+      <StyledMenuList $inputChecked={checked}>
+        <li>
+          <Link to="home" smooth={true} duration={500} offset={-210}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            offset={layoutMobile ? -100 : -200}
+          >
+            Sobre
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="projects"
+            smooth={true}
+            duration={500}
+            offset={layoutMobile ? -100 : -200}
+          >
+            Projetos
+          </Link>
+        </li>
+        <li>
+          <Link to="footer" smooth={true} duration={500}>
+            Contatos
+          </Link>
+        </li>
+      </StyledMenuList>
+    </StyledMenu>
   )
 }
 
