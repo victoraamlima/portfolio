@@ -9,14 +9,14 @@ const Projects = () => {
 
       <ProjectsCards />
 
-      <StyledButton
+      {/* <StyledButton
         $width="30rem"
         $height="7.8rem"
         $fontesize="3rem"
         $local={"project"}
       >
         MOSTRAR MAIS
-      </StyledButton>
+      </StyledButton> */}
     </StyledProjects>
   )
 }
