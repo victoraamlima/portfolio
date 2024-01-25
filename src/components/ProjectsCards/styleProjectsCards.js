@@ -37,7 +37,7 @@ const ProjectCardCss = css`
 const ProjectCard = styled.div`
   ${ProjectCardCss}
 `
-const ProjectCardInfo = styled.div`
+const ProjectCardInfoCss = css`
   display: flex;
   flex-direction: column;
   padding: 1.5rem 3rem 2rem;
@@ -63,6 +63,9 @@ const ProjectCardInfo = styled.div`
     font-weight: 400;
     padding: 0.5rem 0;
   }
+`
+const ProjectCardInfo = styled.div`
+  ${ProjectCardInfoCss}
 `
 
 const ProjectType = styled.h5`
@@ -97,7 +100,7 @@ const ProjectImage = styled.img`
   }
 `
 
-const ProjectTechnologies = styled.div`
+const ProjectTechnologiesCss = css`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,13 +114,20 @@ const ProjectTechnologies = styled.div`
     height: 5rem;
   }
 `
-const ProjectLinks = styled.div`
+const ProjectTechnologies = styled.div`
+  ${ProjectTechnologiesCss}
+`
+const ProjectLinksCss = css`
   display: flex;
   padding: 1rem 0;
   justify-content: center;
   align-items: flex-start;
   gap: 1.5rem;
 `
+const ProjectLinks = styled.div`
+  ${ProjectLinksCss}
+`
+
 const StyledLink = styled.a`
   ${StyledButtonCss}
 `
@@ -151,13 +161,23 @@ const ComingSoonContainer = styled.div`
     font-family: Inter;
     font-weight: 900;
     font-size: 5rem;
-    z-index: 10;
+    z-index: 9;
   }
 `
 const ComingSoonCard = styled.div`
   ${ProjectCardCss}
   position: relative;
   filter: grayscale(100%) blur(4px);
+
+  &:hover {
+    transform: scale(1);
+    box-shadow: none;
+
+    ${StyledLink}, ${ButtonMoreInformations} {
+      transform: scale(1);
+      cursor: default;
+    }
+  }
 `
 const ComingSoonStrip = styled.img`
   width: 100%;
@@ -168,11 +188,15 @@ const ComingSoonStrip = styled.img`
 
 export {
   ProjectsCardsContainer,
+  ProjectCardCss,
   ProjectCard,
+  ProjectCardInfoCss,
   ProjectCardInfo,
   ProjectType,
   ProjectImage,
+  ProjectTechnologiesCss,
   ProjectTechnologies,
+  ProjectLinksCss,
   ProjectLinks,
   StyledLink,
   ButtonMoreInformations,
