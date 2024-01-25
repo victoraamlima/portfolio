@@ -1,9 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit"
 import themeColorsReducer from "./reducers/themesColors"
+import selectedProjectReducer from "./reducers/detailedProjectCardInfo"
 
 const store = configureStore({
   reducer: {
-    // Add reducers here
+    selectedProject: selectedProjectReducer,
     themeColors: themeColorsReducer,
   },
 })
