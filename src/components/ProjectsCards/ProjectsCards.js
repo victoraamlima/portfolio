@@ -1,7 +1,8 @@
-import { useState } from "react"
 import projectsInfoJson from "../../json/projects.json"
 import technologiesSvgs from "../../utils/projectsIcons/projectsIcons"
 import ComingSoon from "./ComingSoon/ComingSoon"
+import { selectProject } from "../store/actions/DetailedProjectCardInfo"
+import { useDispatch } from "react-redux"
 import {
   ButtonMoreInformations,
   ProjectCard,
@@ -16,6 +17,8 @@ import {
 
 const ProjectsCards = () => {
   const projectsInfo = projectsInfoJson.projectsInfo
+
+  const dispatch = useDispatch()
 
   return (
     <ProjectsCardsContainer>
@@ -38,12 +41,12 @@ const ProjectsCards = () => {
                 )
               })}
 
-              <p>{project.description}</p>
+              <p>{project.descriptionShort}</p>
 
               <ProjectTechnologies>
                 {technologiesSvgs
                   .filter((tech) => {
-                    return project.techs.includes(tech.id)
+                    return project.techsShort.includes(tech.id)
                   })
                   .map((tech) => {
                     return <img src={tech.svg} alt={tech.name} key={tech.id} />
@@ -74,7 +77,13 @@ const ProjectsCards = () => {
                   repositório
                 </StyledLink>
               </ProjectLinks>
-              <ButtonMoreInformations>SAIBA MAIS</ButtonMoreInformations>
+              <ButtonMoreInformations
+                onClick={() => {
+                  dispatch(selectProject(project))
+                }}
+              >
+                SAIBA MAIS
+              </ButtonMoreInformations>
             </ProjectCardInfo>
           </ProjectCard>
         )
