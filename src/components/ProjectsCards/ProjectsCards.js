@@ -26,7 +26,7 @@ const ProjectsCards = () => {
         return (
           <ProjectCard key={project.id}>
             <ProjectImage
-              src={require(`../../images/projects/${project.image}`)}
+              src={require(`../../images/projects/${project.images[0]}`)}
               alt={project.name}
             />
 
