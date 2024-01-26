@@ -3,7 +3,7 @@ import breakpoints from "../../style/responsive"
 
 const StyledContactBtn = styled.ul`
   display: flex;
-  flex-direction: ${({ $footer }) => ($footer ? " column " : "row")};
+  flex-direction: row;
   gap: 40px;
 
   @media (max-width: ${breakpoints.large2}px) {
