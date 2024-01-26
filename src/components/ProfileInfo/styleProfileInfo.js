@@ -3,14 +3,33 @@ import breakpoints from "../../style/responsive"
 
 const StyledProfileInfo = styled.div`
   display: flex;
-  flex-direction: ${({ $footer }) => ($footer ? "row" : "column")};
-  justify-content: center;
-  align-items: ${({ $footer }) => ($footer ? "center" : "flex-start")};
   gap: 40px;
-  max-width: 900px;
+  flex-direction: ${({ $footer }) => ($footer ? "row" : "column")};
+  justify-content: ${({ $footer }) => ($footer ? "space-around" : "center")};
+  align-items: ${({ $footer }) => ($footer ? "center" : "flex-start")};
+  max-width: ${({ $footer }) => ($footer ? "unset" : "900px")};
   text-align: ${({ $footer }) => ($footer ? "center" : "left")};
+  ${({ $footer }) => $footer && "width: 100%;"}
 
-  div {
+  ${({ $footer }) =>
+    $footer
+      ? `
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      max-width: unset;
+      text-align: center;
+      width: 100%;
+      `
+      : `
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      max-width:900px;
+      text-align: left;
+      `}
+
+  div:first-child {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -104,6 +123,7 @@ const StyledProfileInfo = styled.div`
       max-width: 600px;
     }
   }
+
   @media (max-width: ${breakpoints.small1}px) {
     h2 {
       font-size: 30px;
@@ -119,4 +139,69 @@ const StyledProfileInfo = styled.div`
     }
   }
 `
-export { StyledProfileInfo }
+const Line = styled.span`
+  height: 20rem;
+  width: 3px;
+  background-color: ${({ theme }) => theme.colors.white1};
+
+  @media (max-width: ${breakpoints.large2}px) {
+    width: 400px;
+    height: 3px;
+  }
+
+  @media (max-width: ${breakpoints.medium2}px) {
+    width: 250px;
+  }
+`
+
+const StyledCallMe = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+
+  h5 {
+    color: ${({ theme }) => theme.colors.white1};
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  @media (max-width: ${breakpoints.large2}px) {
+    div {
+      flex-direction: column;
+      gap: 25px;
+    }
+  }
+`
+
+const EmailLink = styled.a`
+  color: ${({ theme }) => theme.colors.white1};
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  text-decoration-line: underline;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: ${breakpoints.medium1}px) {
+    font-size: 16px;
+  }
+`
+export { StyledProfileInfo, Line, StyledCallMe, EmailLink }
