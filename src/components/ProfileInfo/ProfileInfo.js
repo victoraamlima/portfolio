@@ -1,5 +1,10 @@
 import { ContactBtn } from "../ContactBtn/ContactBtn"
-import { StyledCallMe, EmailLink, StyledProfileInfo, Line } from "./styleProfileInfo"
+import {
+  StyledCallMe,
+  EmailLink,
+  StyledProfileInfo,
+  Line,
+} from "./styleProfileInfo"
 
 const ProfileInfo = ({ footer }) => {
   return (
@@ -27,7 +32,11 @@ const ProfileInfo = ({ footer }) => {
         <div>
           <ContactBtn footer={footer} />
 
-          {footer && <EmailLink>Victoraamlima@Gmail.com</EmailLink>}
+          {footer && (
+            <EmailLink href="mailto:victoraamlima@gmail.com">
+              Victoraamlima@Gmail.com
+            </EmailLink>
+          )}
         </div>
       </StyledCallMe>
     </StyledProfileInfo>
