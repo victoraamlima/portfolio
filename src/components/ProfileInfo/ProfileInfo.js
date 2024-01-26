@@ -24,7 +24,7 @@ const ProfileInfo = ({ footer }) => {
         estudado e praticado diariamente. Além de, ter feito diversos projetos.
       </p>
 
-      <Line />
+      {footer && <Line />}
 
       <StyledCallMe>
         {footer && <h5>Contate Me</h5>}
