@@ -66,12 +66,21 @@ const DetailedProjectCardInfo = () => {
         </StyledDetailedProjectCardInfo>
 
         <ProjectImgs>
-          <img src={require("../../images/Frame 118.png")} alt="test" />
+          <img
+            src={require(`../../images/projects/${
+              selectedProject.images ? selectedProject.images[0] : "pokedex-1.png"
+            }`)}
+            alt="test"
+          />
 
           <div>
-            <img src={require("../../images/Captura.png")} alt="test"  />
-            <img src={require("../../images/Captura.png")} alt="test"  />
-            <img src={require("../../images/Captura.png")} alt="test"  />
+            {selectedProject.images?.map((image, i) => (
+              <img
+                key={i}
+                src={require(`../../images/projects/${image}`)}
+                alt="test"
+              />
+            ))}
           </div>
         </ProjectImgs>
 
