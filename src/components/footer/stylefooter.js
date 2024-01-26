@@ -7,7 +7,7 @@ const StyledFooter = styled.footer`
   align-items: center;
   background-color: ${({ theme }) =>
     theme.theme === "light" ? theme.colors.blue4 : theme.colors.blue2};
-  padding: 50px 10rem;
+  padding: 10rem 7.5rem;
   text-align: center;
   gap: 40px;
 
@@ -20,7 +20,7 @@ const StyledFooter = styled.footer`
   }
 
   @media (max-width: ${breakpoints.small1}px) {
-    padding: 10px;
+    padding: 20px 10px;
   }
 `
 export { StyledFooter }
