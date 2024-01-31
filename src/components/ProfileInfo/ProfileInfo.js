@@ -20,8 +20,12 @@ const ProfileInfo = ({ footer }) => {
       </div>
 
       <p>
-        Desde que interessei-me pela área da programação, há um ano, tenho
-        estudado e praticado diariamente. Além de, ter feito diversos projetos.
+        Sou um desenvolvedor full-stack e designer gráfico
+        freelancer que descobriu a sua paixão pela programação. Comecei a
+        estudar desenvolvimento web e me apaixonei pela área. Até o final de
+        2023, já tinha completado dois cursos de front-end e back-end e me tornei
+        um desenvolvedor full-stack. Ainda tenho muito a aprender, mas estou
+        determinado a seguir a minha vocação.
       </p>
 
       {footer && <Line />}

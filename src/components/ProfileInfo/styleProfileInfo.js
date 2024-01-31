@@ -82,7 +82,7 @@ const StyledProfileInfo = styled.div`
     color: ${({ theme }) =>
       theme.theme === "light" ? theme.colors.blue1 : theme.colors.white1};
     font-family: Inter;
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     font-weight: 400;
     margin-bottom: 10px;
   }
