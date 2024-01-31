@@ -99,6 +99,11 @@ const TechnologyInfo = styled.div`
   justify-content: space-between;
   gap: 15px;
 
+  img{
+    width: 9rem;
+    height: 9rem;
+  }
+
   span {
     color: ${({ theme }) =>
       theme.theme === "light" ? theme.colors.black1 : theme.colors.white1};
