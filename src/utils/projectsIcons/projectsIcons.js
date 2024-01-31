@@ -10,6 +10,10 @@ import NodejsSvg from "../../images/technologies/nodejs.svg"
 import NpmSvg from "../../images/technologies/npm.svg"
 import ReactSvg from "../../images/technologies/react.svg"
 import PhotoshopSvg from "../../images/technologies/photoshop.svg"
+import AwsSvg from "../../images/technologies/Amazon_Web_Services_Logo.svg"
+import PostgresSvg from "../../images/technologies/postgresql-plain-wordmark.svg"
+import KnexSvg from "../../images/technologies/knex-js.svg"
+import ExpressSvg from "../../images/technologies/express-original.svg"
 
 const technologiesSvgs = [
   { id: "redux", name: "Redux", svg: ReduxSvg },
@@ -24,6 +28,10 @@ const technologiesSvgs = [
   { id: "npm", name: "NPM", svg: NpmSvg },
   { id: "react", name: "React", svg: ReactSvg },
   { id: "photoshop", name: "Photoshop", svg: PhotoshopSvg },
+  { id: "aws", name: "Amazon Web Services", svg: AwsSvg },
+  { id: "postgres", name: "PostgreSQL", svg: PostgresSvg },
+  { id: "knex", name: "Knex.js", svg: KnexSvg },
+  { id: "express", name: "Express", svg: ExpressSvg },
 ]
 
 export default technologiesSvgs
