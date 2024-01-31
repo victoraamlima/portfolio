@@ -15,7 +15,7 @@ const ProfileInfo = ({ footer }) => {
           Victor Meireles<span>.</span>
         </h2>
         <h3>
-          Desenvolvedor Front-End<span>.</span>
+          Desenvolvedor Full-Stack<span>.</span>
         </h3>
       </div>
 
