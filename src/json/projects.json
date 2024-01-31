@@ -58,6 +58,49 @@
       "techsShort": ["js", "css", "html"],
       "deploy": "https://victoraamlima.github.io/avaliacao/",
       "repository": "https://github.com/victoraamlima/avaliacao"
+    },
+    {
+      "id": "portfolio",
+      "name": "Portfólio",
+      "type": ["front-end"],
+      "description": "Neste portfólio, eu mostro um pouco da minha trajetória como desenvolvedor web, abrangendo tanto o front-end quanto o back-end. Você pode conhecer os meus projetos, que têm uma descrição detalhada, imagens que mostram o resultado final, as tecnologias que eu utilizei e links para você visitar o site e ver o código-fonte. Você também pode saber mais sobre mim, a minha formação, os meus interesses e as minhas habilidades. Além disso, você pode entrar em contato comigo por meio das minhas redes sociais e do meu e-mail. O portfólio foi construído usando React, Redux, JS, Node.js e outras ferramentas que facilitaram o desenvolvimento e o design.",
+      "descriptionShort": "Um portfólio pessoal de desenvolvimento web responsivo com React, Redux e outras tecnologias.",
+      "images": ["portfolio-1.png", "portfolio-2.png", "portfolio-3.png"],
+      "techs": [
+        "react",
+        "redux",
+        "js",
+        "css",
+        "html",
+        "git",
+        "nodejs",
+        "npm",
+        "figma"
+      ],
+      "techsShort": ["react", "js", "nodejs", "redux"],
+      "deploy": "https://victoraamlima.github.io/portfolio/",
+      "repository": "https://github.com/victoraamlima/portfolio"
+    },
+    {
+      "id": "pdv",
+      "name": "PDV (Frente de Caixa)",
+      "type": ["back-end"],
+      "description": "Este projeto é uma API para um sistema de PDV (Ponto de Venda) genérico, que pode ser usado para diferentes tipos de negócios. A API permite o gerenciamento de produtos, clientes e pedidos, usando PostgreSQL como banco de dados e uma série de tecnologias como JS, Git, Node.js, NPM, Postgres, Express, AWS e Knex. A API também garante a segurança, a performance e a qualidade do código, usando ferramentas como bcrypt, jwt, multer, jest e eslint. O projeto foi feito em conjunto com outros desenvolvedores, seguindo uma metodologia ágil e colaborativa.",
+      "descriptionShort": "Uma API de PDV genérico com PostgreSQL, Express, AWS e outras tecnologias.",
+      "images": ["pdv-1.jpg"],
+      "techs": [
+        "js",
+        "git",
+        "nodejs",
+        "npm",
+        "postgres",
+        "express",
+        "aws",
+        "knex"
+      ],
+      "techsShort": ["js", "nodejs", "postgres", "express", "aws"],
+      "deploy": "https://victoraamlima.github.io/pdv/",
+      "repository": "https://github.com/victoraamlima/pdv"
     }
   ]
 }
