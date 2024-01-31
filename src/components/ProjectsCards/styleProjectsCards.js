@@ -93,6 +93,7 @@ const ProjectImage = styled.img`
   width: 100%;
   height: 29rem;
   border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
 
   @media (max-width: ${breakpoints.small1}px) {
     height: 100%;
