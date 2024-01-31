@@ -18,10 +18,10 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
 
-    * {
-      scrollbar-width: auto;
-      scrollbar-color: #2651B6 #50a0d1;
-    }
+    // * {
+    //   scrollbar-width: auto;
+    //   scrollbar-color: #2651B6 #50a0d1;
+    // }
     
     *::-webkit-scrollbar {
       width: 15px;
