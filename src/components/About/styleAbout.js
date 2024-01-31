@@ -34,6 +34,7 @@ const AboutInfo = styled.div`
   gap: 100px;
   width: 100%;
   justify-content: space-between;
+  max-height: 135rem;
 
   & > div {
     max-width: 50%;
@@ -53,15 +54,19 @@ const AboutInfo = styled.div`
     color: ${({ theme }) =>
       theme.theme === "light" ? theme.colors.blue1 : theme.colors.white1};
     font-family: Inter;
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     font-weight: 400;
     line-height: 175%;
+    height: 90%;
+    overflow-y: overlay;
+    padding: 0 30px 0 0;
   }
 
   @media (max-width: ${breakpoints.medium1}px) {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    max-height: unset;
 
     & > div {
       width: 100%;
@@ -74,7 +79,12 @@ const AboutInfo = styled.div`
     }
 
     p {
-      font-size: 2.5rem;
+      max-height: 300px;
+      padding: 0 10px 0 0;
+    }
+
+    p::-webkit-scrollbar {
+      width: 5px;
     }
   }
 `
@@ -99,7 +109,7 @@ const TechnologyInfo = styled.div`
   justify-content: space-between;
   gap: 15px;
 
-  img{
+  img {
     width: 9rem;
     height: 9rem;
   }
