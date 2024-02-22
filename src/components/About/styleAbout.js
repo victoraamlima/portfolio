@@ -5,7 +5,7 @@ const StyledAbout = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 10rem;
+  padding: 10rem 10rem;
   gap: 5rem;
 
   h2 {
@@ -14,8 +14,24 @@ const StyledAbout = styled.section`
     text-align: center;
     font-family: Inter;
     font-size: 9.6rem;
-    font-weight: 400;
+    font-weight: 600;
   }
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    box-sizing: border-box;
+    display: block;
+    background-color: transparent;
+    background-image: unset;
+    z-index: -1;
+    transform: translateY(calc(-10rem + 0px)) matrix(1, 0, 0, -1, 0, 0);
+  }
+
+
 
   @media (max-width: ${breakpoints.medium1}px) {
     padding: 0 30px;
@@ -23,10 +39,18 @@ const StyledAbout = styled.section`
     h2 {
       font-size: 5rem;
     }
+
+    svg {
+      height: 50%;
+    }
   }
 
   @media (max-width: ${breakpoints.small1}px) {
     padding: 0 10px;
+
+    svg {
+      height: 45%;
+    }
   }
 `
 const AboutInfo = styled.div`
