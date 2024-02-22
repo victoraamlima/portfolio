@@ -10,23 +10,17 @@ const ProfileInfo = ({ footer }) => {
   return (
     <StyledProfileInfo $footer={footer}>
       <div>
-        <h4>Oi, eu sou</h4>
         <h2>
-          Victor Meireles<span>.</span>
+          <span>Olá, eu sou</span> Victor Meireles
         </h2>
-        <h3>
-          Desenvolvedor Full-Stack<span>.</span>
-        </h3>
+        <p>
+          <span>Sou um</span> Desenvolvedor Full-Stack{" "}
+          <span>
+            {" "}
+            e desenvolvo interfaces de usuário web e aplicações Back-end
+          </span>
+        </p>
       </div>
-
-      <p>
-        Sou um desenvolvedor full-stack e designer gráfico
-        freelancer que descobriu a sua paixão pela programação. Comecei a
-        estudar desenvolvimento web e me apaixonei pela área. Até o final de
-        2023, já tinha completado dois cursos de front-end e back-end e me tornei
-        um desenvolvedor full-stack. Ainda tenho muito a aprender, mas estou
-        determinado a seguir a minha vocação.
-      </p>
 
       {footer && <Line />}
 

@@ -4,12 +4,6 @@ import breakpoints from "../../style/responsive"
 const StyledProfileInfo = styled.div`
   display: flex;
   gap: 40px;
-  flex-direction: ${({ $footer }) => ($footer ? "row" : "column")};
-  justify-content: ${({ $footer }) => ($footer ? "space-around" : "center")};
-  align-items: ${({ $footer }) => ($footer ? "center" : "flex-start")};
-  max-width: ${({ $footer }) => ($footer ? "unset" : "900px")};
-  text-align: ${({ $footer }) => ($footer ? "center" : "left")};
-  ${({ $footer }) => $footer && "width: 100%;"}
 
   ${({ $footer }) =>
     $footer
@@ -24,22 +18,21 @@ const StyledProfileInfo = styled.div`
       : `
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      max-width:900px;
+      align-items: center;
+      max-width: 1200px;
       text-align: left;
       `}
 
   div:first-child {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
+    width: 100%;
   }
 
   h2 {
-    color: ${({ theme, $footer }) =>
-      theme.theme === "light" && !$footer
-        ? theme.colors.blue3
-        : theme.colors.white1};
+    color: ${({ theme }) => theme.colors.orange1};
     font-family: Inter;
     font-size: 8rem;
     font-weight: 700;
@@ -48,43 +41,30 @@ const StyledProfileInfo = styled.div`
 
     span {
       display: ${({ $footer }) => ($footer ? "none" : "inline")};
+      color: ${({ theme }) => theme.colors.white1};
+      font-weight: 600;
+      line-height: 100%;
+      white-space: wrap;
     }
   }
 
-  h3 {
+  p {
     color: ${({ theme, $footer }) =>
-      theme.theme === "light" && !$footer
-        ? theme.colors.blue3
-        : theme.colors.white1};
+      $footer ? theme.colors.white1 : theme.colors.orange1};
+    font-size: ${({ $footer }) => ($footer ? "4rem" : "2.5rem")};
+
     font-family: Inter;
-    font-size: 4rem;
-    font-weight: 600;
-    line-height: 100%;
+    font-weight: 700;
+    text-align: center;
     white-space: nowrap;
 
     span {
       display: ${({ $footer }) => ($footer ? "none" : "inline")};
+      color: ${({ theme }) => theme.colors.white1};
+      font-weight: 500;
+      line-height: 100%;
+      white-space: wrap;
     }
-  }
-
-  h4 {
-    display: ${({ $footer }) => ($footer ? "none" : "block")};
-    color: ${({ theme }) =>
-      theme.theme === "light" ? theme.colors.blue3 : theme.colors.white1};
-    font-family: Inter;
-    font-size: 4.8rem;
-    font-weight: 500;
-    line-height: 100%;
-  }
-
-  p {
-    display: ${({ $footer }) => ($footer ? "none" : "block")};
-    color: ${({ theme }) =>
-      theme.theme === "light" ? theme.colors.blue1 : theme.colors.white1};
-    font-family: Inter;
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin-bottom: 10px;
   }
 
   @media (max-width: ${breakpoints.large2}px) {
@@ -92,34 +72,23 @@ const StyledProfileInfo = styled.div`
   }
 
   @media (max-width: ${breakpoints.medium1}px) {
-    align-items: center;
-
     div {
       align-items: center;
     }
 
     h2 {
       font-size: 7rem;
-
-      span {
-        display: none;
-      }
-    }
-
-    h3 {
-      font-size: 3.5rem;
-
-      span {
-        display: none;
-      }
-    }
-
-    h4 {
-      display: none;
     }
 
     p {
-      text-align: center;
+      // text-align: start;
+      max-width: 600px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.medium1 - 293}px) {
+    p {
+      text-align: start;
       max-width: 600px;
     }
   }
@@ -129,13 +98,10 @@ const StyledProfileInfo = styled.div`
       font-size: 30px;
     }
 
-    h3 {
-      font-size: 20px;
-    }
-
     p {
       max-width: 600px;
       font-size: 15px;
+      text-align: start;
     }
   }
 `
