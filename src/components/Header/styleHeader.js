@@ -10,7 +10,7 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   background-color: ${({ theme }) =>
     theme.theme === "light" ? theme.colors.blue4 : theme.colors.blue2};
-  height: 11rem;
+  height: 8rem;
   width: 100%;
   padding: 0 10rem;
   align-items: center;
@@ -19,23 +19,6 @@ const StyledHeader = styled.header`
     padding: 0 30px;
     background-color: ${({ theme }) =>
       theme.theme === "light" ? theme.colors.white3 : theme.colors.blue3};
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -5rem;
-      left: 0;
-      width: 100%;
-      height: 5rem;
-      background: transparent;
-      background: linear-gradient(
-        180deg,
-        ${({ theme }) =>
-            theme.theme === "light" ? theme.colors.white3 : theme.colors.blue3}
-          0%,
-        transparent 100%
-      );
-    }
   }
 
   @media (max-width: ${breakpoints.small1}px) {
@@ -44,7 +27,7 @@ const StyledHeader = styled.header`
 `
 
 const StyledLogo = styled.img`
-  height: 7rem;
+  height: 5rem;
 
   @media (max-width: ${breakpoints.medium1}px) {
     filter: ${({ theme }) =>
