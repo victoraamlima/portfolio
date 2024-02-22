@@ -96,7 +96,7 @@ const StyledMenuList = styled.ul`
     color: ${({ theme }) => theme.colors.white1};
     text-align: center;
     font-family: Inter;
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     font-weight: 500;
     transition: 0.3s;
     text-align: center;

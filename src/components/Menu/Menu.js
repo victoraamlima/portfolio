@@ -41,12 +41,7 @@ const Menu = () => {
           </Link>
         </li>
         <li>
-          <Link
-            to="about"
-            smooth={true}
-            duration={500}
-            offset={layoutMobile ? -100 : -200}
-          >
+          <Link to="about" smooth={true} duration={500} offset={-100}>
             Sobre
           </Link>
         </li>
