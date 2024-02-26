@@ -31,8 +31,6 @@ const StyledAbout = styled.section`
     transform: translateY(calc(-10rem + 0px)) matrix(1, 0, 0, -1, 0, 0);
   }
 
-
-
   @media (max-width: ${breakpoints.medium1}px) {
     padding: 0 30px;
 
@@ -55,14 +53,18 @@ const StyledAbout = styled.section`
 `
 const AboutInfo = styled.div`
   display: flex;
-  gap: 100px;
+  gap: 40px;
   width: 100%;
   justify-content: space-between;
   max-height: 135rem;
 
-  & > div {
-    max-width: 50%;
+  div:first-child {
+    max-width: 45%;
     min-width: 40%;
+  }
+
+  div:last-child {
+    width: 100%;
   }
 
   h3 {
@@ -81,9 +83,7 @@ const AboutInfo = styled.div`
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 175%;
-    height: 90%;
     overflow-y: overlay;
-    padding: 0 30px 0 0;
   }
 
   @media (max-width: ${breakpoints.medium1}px) {
@@ -92,7 +92,8 @@ const AboutInfo = styled.div`
     gap: 30px;
     max-height: unset;
 
-    & > div {
+    div:first-child,
+    div:last-child {
       width: 100%;
       max-width: 100%;
       text-align: center;
@@ -100,15 +101,6 @@ const AboutInfo = styled.div`
 
     h3 {
       font-size: 3rem;
-    }
-
-    p {
-      max-height: 300px;
-      padding: 0 10px 0 0;
-    }
-
-    p::-webkit-scrollbar {
-      width: 5px;
     }
   }
 `
