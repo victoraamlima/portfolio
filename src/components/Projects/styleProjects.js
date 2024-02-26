@@ -14,7 +14,7 @@ const StyledProjects = styled.section`
     text-align: center;
     font-family: Inter;
     font-size: 9.6rem;
-    font-weight: 400;
+    font-weight: 600;
   }
 
   @media (max-width: ${breakpoints.medium1}px) {
