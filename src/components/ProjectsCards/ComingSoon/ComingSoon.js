@@ -28,9 +28,13 @@ const ComingSoon = () => {
   return (
     <>
       <ComingSoonContainer>
-        <ComingSoonStrip src={ComingSoonSvg} alt="Coming Soon strip" />
-
-        <span>EM BREVE</span>
+        <ComingSoonStrip>
+          <div>
+            <span>EM BREVE</span>
+            
+            <img src={ComingSoonSvg} alt="Coming Soon strip" />
+          </div>
+        </ComingSoonStrip>
 
         <ComingSoonCard>
           <ProjectImage
