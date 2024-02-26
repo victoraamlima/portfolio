@@ -99,7 +99,7 @@
         "knex"
       ],
       "techsShort": ["js", "nodejs", "postgres", "express", "aws"],
-      "deploy": "https://victoraamlima.github.io/pdv/",
+      "deploy": "https://p-d-v.cyclic.app/",
       "repository": "https://github.com/victoraamlima/pdv"
     }
   ]
