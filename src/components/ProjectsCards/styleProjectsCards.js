@@ -23,9 +23,11 @@ const ProjectCardCss = css`
   border-radius: 1rem;
   background-color: ${({ theme }) =>
     theme.theme === "light" ? theme.colors.blue6 : theme.colors.blue2};
+  transition: all 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(1.05);
+    background-color: ${({ theme }) =>
+      theme.theme === "light" ? theme.colors.blue5 : theme.colors.blue7};
     box-shadow: 0px 0px 30px 0px ${({ theme }) => theme.colors.black2};
   }
 
@@ -136,11 +138,11 @@ const StyledLink = styled.a`
 const ButtonMoreInformations = styled.button`
   all: unset;
   color: ${({ theme }) =>
-    theme.theme === "light" ? theme.colors.blue1 : theme.colors.blue6};
+    theme.theme === "light" ? theme.colors.blue1 : theme.colors.orange2};
   text-align: center;
   font-family: Inter;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   text-decoration-line: underline;
   cursor: pointer;
@@ -152,18 +154,7 @@ const ButtonMoreInformations = styled.button`
 
 const ComingSoonContainer = styled.div`
   position: relative;
-
-  span {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-
-    font-family: Inter;
-    font-weight: 900;
-    font-size: 5rem;
-    z-index: 9;
-  }
+  height: 78.2rem;
 `
 const ComingSoonCard = styled.div`
   ${ProjectCardCss}
@@ -171,20 +162,48 @@ const ComingSoonCard = styled.div`
   filter: grayscale(100%) blur(4px);
 
   &:hover {
-    transform: scale(1);
     box-shadow: none;
+    background-color: ${({ theme }) =>
+    theme.theme === "light" ? theme.colors.blue6 : theme.colors.blue2};
+
 
     ${StyledLink}, ${ButtonMoreInformations} {
-      transform: scale(1);
+      transform: none;
       cursor: default;
     }
   }
 `
-const ComingSoonStrip = styled.img`
-  width: 100%;
+const ComingSoonStrip = styled.div`
   position: absolute;
-  z-index: 9;
   top: 30%;
+  z-index: 9;
+  width: 51.5rem;
+
+  div {
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // width: 100%;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 5rem;
+    z-index: 9;
+    white-space: nowrap;
+  }
+
+  @media (max-width: ${breakpoints.small1}px) {
+    width: 275px;
+  }
 `
 
 export {
