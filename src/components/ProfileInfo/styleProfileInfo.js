@@ -81,7 +81,6 @@ const StyledProfileInfo = styled.div`
     }
 
     p {
-      // text-align: start;
       max-width: 600px;
     }
   }
