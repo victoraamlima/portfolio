@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Portfólio de Victor Meireles
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao repositório do meu portfólio pessoal. Este projeto é uma representação do meu trabalho como Desenvolvedor Full-Stack, abrangendo tanto o front-end quanto o back-end. Aqui, você encontrará detalhes sobre os projetos que desenvolvi, minhas habilidades, e como entrar em contato comigo.
 
-## Available Scripts
+>Link para o [Deploy](https://victoraamlima.github.io/portfolio/)
 
-In the project directory, you can run:
+>Link para o [Repositório](https://github.com/victoraamlima/portfolio)
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Redux
+- JavaScript (JS)
+- Cascading Style Sheets (CSS)
+- HyperText Markup Language (HTML)
+- E mais...
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Linguagens
 
-### `npm test`
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/)
+- [React](https://react.dev/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias utilizadas
 
-### `npm run build`
+- React Router
+- Redux
+- Styled-components
+- BrowserRouter 
+- Node.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tópicos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Funcionalidades](#funcionalidades)
+- [Rodando o Projeto Localmente](#rodando-o-projeto-localmente)
+- [Contribuições](#contribuições)
+- [Contato](#contato)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Sobre o Projeto
 
-### `npm run eject`
+Este portfólio foi construído usando React, Redux, JavaScript, CSS, HTML, e outras tecnologias. O objetivo é mostrar um pouco da minha trajetória como desenvolvedor web, destacando projetos com descrições detalhadas, imagens do resultado final, as tecnologias utilizadas, e links para o site e código-fonte.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Funcionalidades
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Navegação Intuitiva:** Acesse facilmente todas as seções do portfólio, incluindo projetos, sobre mim, e contato.
+- **Projetos Detalhados:** Cada projeto inclui uma descrição, tecnologias utilizadas, imagens, e links para mais informações.
+- **Contato:** Informações de contato disponíveis através de ícones de redes sociais e e-mail.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Pré-requisitos
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Node.js
 
-## Learn More
+[Node.js](https://nodejs.org/en/download/) é uma plataforma open source para desenvolvimento de aplicações em JavaScript fora do navegador, utilizado para construir aplicações de alta performance e escalabilidade em servidores web. Ele utiliza a engine JavaScript V8 e possui uma vasta biblioteca de módulos disponíveis que facilitam o desenvolvimento de aplicações modernas.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Rodando o Projeto Localmente
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para executar este projeto em sua máquina local, siga os passos abaixo:
 
-### Code Splitting
+1. Clone o repositório:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```sh
+git clone https://github.com/victoraamlima/portfolio.git
 
-### Analyzing the Bundle Size
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Instale as dependências:
 
-### Making a Progressive Web App
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. Inicie o servidor de desenvolvimento:
 
-### Advanced Configuration
+> Isso irá abrir o projeto no navegador padrão em http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contribuições
 
-### Deployment
+Contribuições são sempre bem-vindas! Por favor, leia o guia de contribuições para saber como contribuir para este projeto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contato
 
-### `npm run build` fails to minify
+GitHub: https://github.com/victoraamlima
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+LinkedIn: https://www.linkedin.com/in/victor-meireles-dev/
+
+E-mail: victoraamlima@gmail.com
+
+Agradeço pela visita ao meu portfólio. Fique à vontade para entrar em contato comigo para qualquer informação adicional.
+
+```
+
+Este template é um ponto de partida. Sinta-se livre para adicionar ou modificar seções conforme achar necessário para melhor refletir seu projeto e personalidade.
+```
