@@ -69,7 +69,7 @@ const About = () => {
               repeatCount="indefinite"
             />
           </use>
-          <use xlinkHref="#wave" opacty=".9">
+          <use xlinkHref="#wave" opacity=".9">
             <animateTransform
               attributeName="transform"
               attributeType="XML"
