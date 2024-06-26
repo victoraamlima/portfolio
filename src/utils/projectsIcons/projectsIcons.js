@@ -1,19 +1,22 @@
-import ReduxSvg from "../../images/technologies/redux.svg"
-import CssSvg from "../../images/technologies/css.svg"
-import FigmaSvg from "../../images/technologies/figma.svg"
-import GitSvg from "../../images/technologies/git.svg"
-import HtmlSvg from "../../images/technologies/html.svg"
-import JsSvg from "../../images/technologies/js.svg"
-import JestSvg from "../../images/technologies/jest.svg"
-import JquerySvg from "../../images/technologies/jquery.svg"
-import NodejsSvg from "../../images/technologies/nodejs.svg"
-import NpmSvg from "../../images/technologies/npm.svg"
-import ReactSvg from "../../images/technologies/react.svg"
-import PhotoshopSvg from "../../images/technologies/photoshop.svg"
-import AwsSvg from "../../images/technologies/Amazon_Web_Services_Logo.svg"
-import PostgresSvg from "../../images/technologies/postgresql-plain-wordmark.svg"
-import KnexSvg from "../../images/technologies/knex-js.svg"
-import ExpressSvg from "../../images/technologies/express-original.svg"
+import ReduxSvg from "../../images/technologies/redux.svg";
+import CssSvg from "../../images/technologies/css.svg";
+import FigmaSvg from "../../images/technologies/figma.svg";
+import GitSvg from "../../images/technologies/git.svg";
+import HtmlSvg from "../../images/technologies/html.svg";
+import JsSvg from "../../images/technologies/js.svg";
+import JestSvg from "../../images/technologies/jest.svg";
+import JquerySvg from "../../images/technologies/jquery.svg";
+import NodejsSvg from "../../images/technologies/nodejs.svg";
+import NpmSvg from "../../images/technologies/npm.svg";
+import ReactSvg from "../../images/technologies/react.svg";
+import PhotoshopSvg from "../../images/technologies/photoshop.svg";
+import AwsSvg from "../../images/technologies/Amazon_Web_Services_Logo.svg";
+import PostgresSvg from "../../images/technologies/postgresql-plain-wordmark.svg";
+import KnexSvg from "../../images/technologies/knex-js.svg";
+import ExpressSvg from "../../images/technologies/express-original.svg";
+import NextjsSvg from "../../images/technologies/nextjs.svg";
+import TypescriptSvg from "../../images/technologies/typescript.svg";
+import TailwindcssSvg from "../../images/technologies/tailwindcss.svg";
 
 const technologiesSvgs = [
   { id: "redux", name: "Redux", svg: ReduxSvg },
@@ -32,6 +35,9 @@ const technologiesSvgs = [
   { id: "postgres", name: "PostgreSQL", svg: PostgresSvg },
   { id: "knex", name: "Knex.js", svg: KnexSvg },
   { id: "express", name: "Express", svg: ExpressSvg },
-]
+  { id: "nextjs", name: "Next.js", svg: NextjsSvg },
+  { id: "typescript", name: "TypeScript", svg: TypescriptSvg },
+  { id: "tailwindcss", name: "Tailwind CSS", svg: TailwindcssSvg },
+];
 
-export default technologiesSvgs
+export default technologiesSvgs;
