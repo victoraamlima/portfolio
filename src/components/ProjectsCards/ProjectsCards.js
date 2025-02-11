@@ -57,13 +57,13 @@ const ProjectsCards = () => {
                 <StyledLink
                   target="_blank"
                   rel="noreferrer"
-                  $width="18.4rem"
+                  $width="21rem"
                   $fontesize="2rem"
                   $height="4.8rem"
                   $local={"card"}
                   href={project.deploy}
                 >
-                  deploy
+                  visualizar demo
                 </StyledLink>
                 <StyledLink
                   target="_blank"
