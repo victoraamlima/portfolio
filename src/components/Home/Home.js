@@ -1,5 +1,4 @@
-import perfioFoto from "../../images/profile.jpg"
-import { GoDown, ProfileFoto, StyledHome } from "./styleHome"
+import { GoDown, StyledHome } from "./styleHome"
 import ProfileInfo from "../ProfileInfo/ProfileInfo"
 import { Link } from "react-scroll"
 
@@ -7,8 +6,6 @@ const Home = () => {
   return (
     <StyledHome id="home">
       <ProfileInfo footer={false} />
-
-      {/* <ProfileFoto src={perfioFoto} alt="Foto do perfio do Victor Meireles" /> */}
 
       <GoDown>
         <Link to="about" smooth={true} duration={500} offset={-200}>
