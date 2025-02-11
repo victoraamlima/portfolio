@@ -1,10 +1,10 @@
-import technologiesSvgs from "../../utils/projectsIcons/projectsIcons"
+import technologiesSvgs from "../../utils/projectsIcons/projectsIcons";
 import {
   AboutInfo,
   StyledAbout,
   Technologies,
   TechnologyInfo,
-} from "./styleAbout"
+} from "./styleAbout";
 
 const About = () => {
   return (
@@ -89,23 +89,35 @@ const About = () => {
 
       <AboutInfo>
         <div>
-          <h3>Um pouco da minha História</h3>
+          <h3>Quem sou eu:</h3>
 
           <p>
-            Meu nome é Victor Meireles, um apaixonado por tecnologia que
-            encontrou seu caminho como desenvolvedor full-stack e designer
-            gráfico freelancer. Iniciei minha jornada acadêmica em Engenharia
-            Mecânica, mas logo percebi que minha paixão estava no
-            Desenvolvimento de Software. Durante a pandemia, comecei a trabalhar
-            com design gráfico e descobri a programação. Em 2022, decidi mudar
-            de carreira e comecei um curso de desenvolvedor front-end web.
-            <br />
-            <br />
-            No meio do ano, fui agraciado com uma bolsa para um curso intensivo
-            de desenvolvedor back-end na Cubos Academy. Agora, após concluir o
-            curso, estou confiante no meu caminho como desenvolvedor e estou
-            ansioso pelo que o futuro reserva para minha carreira na
-            programação.
+            Meu nome é Victor Meireles, sou desenvolvedor full-stack e designer
+            gráfico freelancer com uma paixão inabalável por tecnologia e
+            inovação.
+          </p>
+
+          <h3>O que eu faço:</h3>
+
+          <p>
+            Desenvolvo soluções completas tanto para front-end quanto para
+            back-end. Utilizo tecnologias como HTML, CSS, JavaScript, React,
+            TypeScript, Next.js, Node.js, APIs REST e bancos de dados SQL e
+            NoSQL. Crio landpages, desenvolvimento e utilizo APIs, e construo
+            sites dinâmicos e responsivos. Além disso, tenho habilidades em
+            edição de imagem, criação de vetores e edição de vídeos,
+            proporcionando uma abordagem holística ao design e desenvolvimento.
+          </p>
+          
+          <h3>O que já fiz:</h3>
+
+          <p>
+            Já desenvolvi diversos projetos tanto de front-end quanto de
+            back-end, incluindo bancos de dados SQL e NoSQL, landpages, criação
+            e utilização de APIs, e sites dinâmicos. Para expandir meus
+            conhecimentos, estou cursando Engenharia de Software. Sou um
+            desenvolvedor dedicado, criativo e sempre em busca de novos
+            desafios.
           </p>
         </div>
 
@@ -124,7 +136,7 @@ const About = () => {
         </div>
       </AboutInfo>
     </StyledAbout>
-  )
-}
+  );
+};
 
-export default About
+export default About;

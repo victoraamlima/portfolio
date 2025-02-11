@@ -70,7 +70,7 @@ const AboutInfo = styled.div`
   h3 {
     color: ${({ theme }) =>
       theme.theme === "light" ? theme.colors.blue3 : theme.colors.white1};
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     font-family: Inter;
     font-size: 4rem;
     font-weight: 500;
@@ -84,6 +84,7 @@ const AboutInfo = styled.div`
     font-weight: 400;
     line-height: 175%;
     overflow-y: overlay;
+    margin-bottom: 3rem;
   }
 
   @media (max-width: ${breakpoints.medium1}px) {
