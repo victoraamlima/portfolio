@@ -24,16 +24,25 @@
       "repository": "https://github.com/victoraamlima/pokedex"
     },
     {
-      "id": "github-profile",
-      "name": "perfil github",
-      "type": ["front-end"],
-      "description": "Este projeto usa a API do GitHub, que é um serviço que guarda e compartilha dados de programação, para ver dados de um usuário do GitHub. Ele usa o JavaScript, que é uma linguagem de programação, para pedir os dados ao GitHub usando um código específico chamado endpoint. Ele usa o HTML e CSS, que são linguagens de marcação, para mostrar os dados na Web de forma organizada e bonita. Os dados que ele mostra são: o nome, a foto e o texto do perfil do usuário, que são informações pessoais; o nome, as cópias, as curtidas, as visualizações e a linguagem dos projetos do usuário, que são informações sobre o que ele programou; e o projeto e a ação das atividades do usuário, que são informações sobre o que ele fez recentemente no GitHub.",
-      "descriptionShort": "Projeto responsivo utilizando a API do GitHub para acessar as informações do perfil e seus repositórios, ele foi criado com HTML, CSS e Javascript.",
-      "images": ["github-profile.png"],
-      "techs": ["js", "css", "html", "git"],
-      "techsShort": ["js", "css", "html"],
-      "deploy": "https://victoraamlima.github.io/perfil-gitHub/",
-      "repository": "https://github.com/victoraamlima/perfil-gitHub"
+      "id": "pdv",
+      "name": "PDV (Frente de Caixa)",
+      "type": ["back-end"],
+      "description": "Este projeto é uma API para um sistema de PDV (Ponto de Venda) genérico, que pode ser usado para diferentes tipos de negócios. A API permite o gerenciamento de produtos, clientes e pedidos, usando PostgreSQL como banco de dados e uma série de tecnologias como JS, Git, Node.js, NPM, Postgres, Express, AWS e Knex. A API também garante a segurança, a performance e a qualidade do código, usando ferramentas como bcrypt, jwt, multer, jest e eslint. O projeto foi feito em conjunto com outros desenvolvedores, seguindo uma metodologia ágil e colaborativa.",
+      "descriptionShort": "Uma API de PDV genérico com PostgreSQL, Express, AWS e outras tecnologias.",
+      "images": ["pdv-1.jpg"],
+      "techs": [
+        "js",
+        "git",
+        "nodejs",
+        "npm",
+        "postgres",
+        "express",
+        "aws",
+        "knex"
+      ],
+      "techsShort": ["js", "nodejs", "postgres", "express", "aws"],
+      "deploy": "https://p-d-v.cyclic.app/",
+      "repository": "https://github.com/victoraamlima/pdv"
     },
     {
       "id": "meu-time",
@@ -46,18 +55,6 @@
       "techsShort": ["react", "js", "css", "html"],
       "deploy": "https://victoraamlima.github.io/meu-time/",
       "repository": "https://github.com/victoraamlima/meu-time"
-    },
-    {
-      "id": "evaluation",
-      "name": "avaliação",
-      "type": ["front-end"],
-      "description": "Este é um projeto de programação web que simula um questionário de avaliação de um site. Ele usa as linguagens HTML, CSS e Javascript para criar uma interface interativa onde o usuário pode dar uma nota de 1 a 5 para o site. Depois de dar a nota, o usuário é redirecionado para uma tela de agradecimento que mostra a sua nota e uma mensagem.",
-      "descriptionShort": "Projeto feito com HTML, CSS, Javascript, simulando um questionário de avaliação de um site.",
-      "images": ["evaluation.png"],
-      "techs": ["js", "css", "html", "git"],
-      "techsShort": ["js", "css", "html"],
-      "deploy": "https://victoraamlima.github.io/avaliacao/",
-      "repository": "https://github.com/victoraamlima/avaliacao"
     },
     {
       "id": "portfolio",
@@ -82,25 +79,46 @@
       "repository": "https://github.com/victoraamlima/portfolio"
     },
     {
-      "id": "pdv",
-      "name": "PDV (Frente de Caixa)",
-      "type": ["back-end"],
-      "description": "Este projeto é uma API para um sistema de PDV (Ponto de Venda) genérico, que pode ser usado para diferentes tipos de negócios. A API permite o gerenciamento de produtos, clientes e pedidos, usando PostgreSQL como banco de dados e uma série de tecnologias como JS, Git, Node.js, NPM, Postgres, Express, AWS e Knex. A API também garante a segurança, a performance e a qualidade do código, usando ferramentas como bcrypt, jwt, multer, jest e eslint. O projeto foi feito em conjunto com outros desenvolvedores, seguindo uma metodologia ágil e colaborativa.",
-      "descriptionShort": "Uma API de PDV genérico com PostgreSQL, Express, AWS e outras tecnologias.",
-      "images": ["pdv-1.jpg"],
+      "id": "github-profile",
+      "name": "perfil github",
+      "type": ["front-end"],
+      "description": "Este projeto usa a API do GitHub, que é um serviço que guarda e compartilha dados de programação, para ver dados de um usuário do GitHub. Ele usa o JavaScript, que é uma linguagem de programação, para pedir os dados ao GitHub usando um código específico chamado endpoint. Ele usa o HTML e CSS, que são linguagens de marcação, para mostrar os dados na Web de forma organizada e bonita. Os dados que ele mostra são: o nome, a foto e o texto do perfil do usuário, que são informações pessoais; o nome, as cópias, as curtidas, as visualizações e a linguagem dos projetos do usuário, que são informações sobre o que ele programou; e o projeto e a ação das atividades do usuário, que são informações sobre o que ele fez recentemente no GitHub.",
+      "descriptionShort": "Projeto responsivo utilizando a API do GitHub para acessar as informações do perfil e seus repositórios, ele foi criado com HTML, CSS e Javascript.",
+      "images": ["github-profile.png"],
+      "techs": ["js", "css", "html", "git"],
+      "techsShort": ["js", "css", "html"],
+      "deploy": "https://victoraamlima.github.io/perfil-gitHub/",
+      "repository": "https://github.com/victoraamlima/perfil-gitHub"
+    },
+    {
+      "id": "evaluation",
+      "name": "avaliação",
+      "type": ["front-end"],
+      "description": "Este é um projeto de programação web que simula um questionário de avaliação de um site. Ele usa as linguagens HTML, CSS e Javascript para criar uma interface interativa onde o usuário pode dar uma nota de 1 a 5 para o site. Depois de dar a nota, o usuário é redirecionado para uma tela de agradecimento que mostra a sua nota e uma mensagem.",
+      "descriptionShort": "Projeto feito com HTML, CSS, Javascript, simulando um questionário de avaliação de um site.",
+      "images": ["evaluation.png"],
+      "techs": ["js", "css", "html", "git"],
+      "techsShort": ["js", "css", "html"],
+      "deploy": "https://victoraamlima.github.io/avaliacao/",
+      "repository": "https://github.com/victoraamlima/avaliacao"
+    },
+    {
+      "id": "site-valdir-junior",
+      "name": "Site do Valdir Júnior",
+      "type": ["front-end"],
+      "description": "Este site foi construído usando Next.js, React, TypeScript, Tailwind CSS, e outras tecnologias. O objetivo é mostrar um pouco da trajetória como Consultor Independente Herbalife, destacando produtos com descrições detalhadas, imagens do resultado final, as tecnologias utilizadas, e links para o site e código-fonte.",
+      "descriptionShort": "Site do Valdir Júnior, Consultor Independente Herbalife, construído com Next.js, React, TypeScript, Tailwind CSS, e outras tecnologias.",
+      "images": ["site-valdir-junior-1.png", "site-valdir-junior-2.png"],
       "techs": [
-        "js",
-        "git",
-        "nodejs",
-        "npm",
-        "postgres",
-        "express",
-        "aws",
-        "knex"
+        "nextjs",
+        "react",
+        "typescript",
+        "tailwindcss",
+        "jest"
       ],
-      "techsShort": ["js", "nodejs", "postgres", "express", "aws"],
-      "deploy": "https://p-d-v.cyclic.app/",
-      "repository": "https://github.com/victoraamlima/pdv"
+      "techsShort": ["nextjs", "react", "typescript", "tailwindcss"],
+      "deploy": "https://valdirjuniorhbl.github.io/shape-control/",
+      "repository": "https://github.com/victoraamlima/site-valdir-junior"
     }
   ]
 }
